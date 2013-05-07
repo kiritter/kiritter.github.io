@@ -1,3 +1,9 @@
+body{
+	background-image: url("img/IMG_6872.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 50% 10%;
+}
 div#all{
 	width:600px;
 	margin-left:auto;
@@ -14,6 +20,14 @@ html{
 	font-family: 'Pompiere', serif;
 	font-size: 3em;
 }
+
+div#body{
+	margin: 0 0 0 0;
+	padding: 0.5em 0 1em 0;
+	border-radius: 3%;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
 section{
 	margin: 0 0 0 0.5em;
 	padding: 0;
@@ -22,6 +36,7 @@ footer{
 	margin: 5em 0 0 0;
 	padding: 0;
 }
+
 dl{
 	margin: 0 0 1em 1.5em;
 	padding: 0;
@@ -31,7 +46,7 @@ dt{
 	padding: 0.3em 0 0.3em 0.5em;
 	display: list-item;
 	list-style-type: decimal;
-	background-color: #f0f0ff;
+	background-color: rgba(128, 128, 255, 0.2);
 }
 dd{
 	margin: 0 0 2em 1em;

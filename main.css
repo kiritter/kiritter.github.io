@@ -46,7 +46,6 @@ dt{
 	padding: 0.3em 0 0.3em 0.5em;
 	display: list-item;
 	list-style-type: decimal;
-	background-color: rgba(128, 128, 255, 0.2);
 }
 dd{
 	margin: 0 0 2em 1em;

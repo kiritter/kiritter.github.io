@@ -11,6 +11,8 @@ html{
 .page-title{
 	margin: 2 0 2em 0;
 	padding: 0;
+	font-family: 'Pompiere', serif;
+	font-size: 3em;
 }
 section{
 	margin: 0 0 0 0.5em;

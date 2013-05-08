@@ -14,6 +14,14 @@ div#all{
 html{
 	overflow-y:scroll;
 }
+
+header{
+	position: fixed;
+	top: 0;
+	left: auto;
+	z-index: 9999;
+	width:600px;
+}
 .page-title{
 	width:480px;
 	margin: 0.5em auto 0.5em auto;
@@ -23,16 +31,19 @@ html{
 }
 
 div#body{
-	margin: 0 0 0 0;
+	margin: 105px 0 0 0;
 	padding: 0.5em 0 1em 0;
 	border-radius: 10px;
 	background-color: rgba(255, 255, 255, 0.7);
 }
 
+.balloon-wrapper {
+	position: absolute;
+	top: 110px;
+	left: 650px;
+}
 .balloon-box {
-	position:absolute;
-	top:190px;
-	left:640px;
+	position: fixed;
 	background-color: rgba(255, 255, 255, 0.5);
 	height: 40px;
 	width: 150px;

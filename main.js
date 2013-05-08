@@ -21,7 +21,7 @@ function addEventListenerToDocument() {
 //--------------------------------------------------
 function moveBackgroundImage(event) {
 	var pos = getMousePosition(event);
-	var offsetX = (pos.x / 120) - 10;
+	var offsetX = (pos.x / 120) - 5;
 	//横位置 縦位置
 	body.style.backgroundPosition = "" + (50 + offsetX) + "% 10%";
 }

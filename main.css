@@ -69,6 +69,13 @@ section{
 	margin: 0 0 0 0.5em;
 	padding: 0;
 }
+section h1{
+	margin: 0 0 0.75em 0;
+	padding: 0;
+	font-family: 'Cabin', sans-serif;
+	font-size: 1.5em;
+}
+
 footer{
 	margin: 5em 0 0 0;
 	padding: 0;
@@ -83,8 +90,19 @@ dt{
 	padding: 0.3em 0 0.3em 0.5em;
 	display: list-item;
 	list-style-type: decimal;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1em;
 }
 dd{
-	margin: 0 0 2em 1em;
+	margin: 0 0 2em 1.5em;
 	padding: 0;
+	font-family: 'Cabin', sans-serif;
+	font-size: 1em;
+}
+
+footer table .col1{
+	font-family: 'Cabin', sans-serif;
+	font-size: 0.85em;
+}
+footer table .col2{
 }

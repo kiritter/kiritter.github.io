@@ -134,6 +134,10 @@ dd{
 	font-family: 'Cabin', sans-serif;
 	font-size: 1em;
 }
+dd img{
+	border: solid 1px #B0B0B0;
+	padding: 4px;
+}
 
 footer{
 	margin: 3.7em 0 0 0;

@@ -1,10 +1,21 @@
-body{
-	background-image: url("img/IMG_6872.jpg");
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: 50% 10%;
+@charset "utf-8";
+.cf {
+	zoom: 1;
 }
-body:before{
+.cf:before, .cf:after {
+	content: "";
+	display: table;
+}
+.cf:after {
+	clear: both;
+}
+
+body {
+	width: 100%;
+	background-color:#ffffff;
+	color: #000000;
+}
+body:before {
 	content: "";
 	position: fixed;
 	top: -10px;
@@ -15,157 +26,150 @@ body:before{
 	box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
 }
 
-div#all{
-	width:600px;
-	margin-left:auto;
-	margin-right:auto;
-	margin-top:0px;
-	position:relative;
+header {
+	text-align: center;
 }
-html{
-	overflow-y:scroll;
-}
-
-header{
-	position: fixed;
-	top: 0;
-	left: auto;
-	z-index: 9999;
-	width:600px;
-}
-.page-title{
-	width:480px;
-	margin: 0.5em auto 0.5em auto;
+header h1 {
+	margin: 0.1em 0 0 0;
 	padding: 0;
 	font-family: 'Pompiere', serif;
-	font-size: 3em;
+	font-size: 1.5em;
+}
+header p {
+	margin: 0;
+	padding: 0;
+}
+header p img {
+	width: 100%;
+	height: auto;
+	max-width: 900px;
 }
 
-div#body{
-	margin: 105px 0 0 0;
+div#contens {
+	margin: 0 0 0 0;
 	padding: 0.5em 0 1em 0;
 	border-radius: 10px;
 	background-color: rgba(255, 255, 255, 0.7);
 }
 
-.balloon-wrapper {
-	position: absolute;
-}
-#fuji {
-	top: 110px;
-	left: 650px;
-}
-#earth {
-	top: -40px;
-	left: -230px;
-	cursor: pointer;
-}
-
-.balloon-box {
-	position: fixed;
-	background-color: rgba(255, 255, 255, 0.5);
-	border-radius: 10px;
-	font-family: 'Pompiere', serif;
-	display: inline;
-	vertical-align: middle;
-	text-align: center;
-	box-shadow: 0px 10px 10px -5px rgba(0,0,0,0.6);
-}
-#fuji div{
-	height: 40px;
-	width: 150px;
-	font-size: 1.5em;
-	line-height: 40px;
-}
-#earth div{
-	height: 40px;
-	width: 170px;
-	font-size: 1em;
-	line-height: 40px;
-}
-
-#fuji .balloon-box:after {
-	content: '';
-	position: absolute;
-	border-bottom: 10px solid rgba(255, 255, 255, 0.5);
-	border-right: 5px solid rgba(255, 255, 255, 0);
-	border-left: 5px solid rgba(255, 255, 255, 0);
-	top: -10px;
-	left: 100px;
-}
-
-#earthandmoon {
-	position: absolute;
-	top: 50px;
-	left: -100px;
-	display: none;
-}
-
-section{
-	margin: 0 0 0 0.5em;
+section {
+	margin: 0 0 0 0;
 	padding: 0;
 }
-section h1{
-	margin: 0 0 0.75em 0;
+section h1 {
+	margin: 0.5em 0 0.5em 3%;
 	padding: 0;
 	font-family: 'Cabin', sans-serif;
-	font-size: 1.5em;
+	font-size: 1em;
 }
 
-dl{
-	margin: 0 0 1em 1.5em;
-	padding: 0;
+article.entry {
+	width: 90%;
+	min-width: 150px;
+	max-width: 500px;
+	min-height: 150px;
+	margin: 0 auto 1em auto;
+	padding: 0.3em 0 0.5em 0.3em;
+	border: 1px solid gray;
+	border-color: #000000;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
 }
-dt{
-	margin: 0 0 0.7em 0;
-	padding: 0.3em 0 0.3em 0.5em;
-	display: list-item;
-	list-style-type: decimal;
+article.entry h2 {
+	margin: 0;
+	padding: 0;
 	font-family: 'Raleway', sans-serif;
 	font-size: 1em;
 }
-dt .note2{
-	font-size: 0.8em;
-	color: #4040c0;
+article.entry h2 a {
+	margin: 0;
+	padding: 0;
 }
-dt .tag{
-	font-size: 0.7em;
+article.entry h2 .tag {
+	font-size: 0.6em;
 	color: #ffffff;
 	border-radius: 7px;
 	margin: 0 0.25em 0 0.25em;
 	padding: 0.2em 0.3em 0.2em 0.3em;
 	vertical-align: middle;
 }
-dt .tagJS{
+article.entry h2 .tagJS {
 	background-color: #0000ff;
 }
-dt .tagP5{
+article.entry h2 .tagP5 {
 	background-color: #008000;
 }
-dd{
-	margin: 0 0 2.3em 1.5em;
+
+article.entry p {
+	margin: 0.5em 0 0.5em 1em;
 	padding: 0;
-	font-family: 'Cabin', sans-serif;
-	font-size: 1em;
+	font-family: 'Raleway', sans-serif;
+	font-size: 0.9em;
 }
-dd img{
-	border: solid 1px #B0B0B0;
-	padding: 4px;
+article.entry p .note {
+	font-size: 0.8em;
 }
 
-footer{
-	margin: 3.7em 0 0 0;
-	padding: 0;
-}
-footer table{
+article.entry a {
 	margin: 0 0 0 0.5em;
 	padding: 0;
 }
-footer table .col1{
+article.entry img {
+	width: 95%;
+	max-width: 224px;
+	height: auto;
+	margin: 1em 0 0 0;
+}
+
+footer {
+	margin: 2em 0 0 0;
+	padding: 0;
+}
+footer table {
+	margin: 0 auto 0 auto;
+	padding: 0;
+}
+footer table .col1 {
 	font-family: 'Cabin', sans-serif;
 	font-size: 0.85em;
 }
-footer table .col2{
+footer table .col2 {
 	font-family: 'Droid Sans', sans-serif;
 	font-size: 0.85em;
+}
+
+@media only screen and (min-width: 350px) {
+	header h1 {
+		font-size: 2em;
+	}
+}
+
+@media only screen and (min-width: 500px) {
+	header h1 {
+		font-size: 2.5em;
+	}
+	section h1 {
+		font-size: 1.3em;
+	}
+}
+
+@media only screen and (min-width: 769px) {
+	div#all{
+		max-width:1024px;
+		margin-left:auto;
+		margin-right:auto;
+		margin-top:0px;
+	}
+	html{
+		overflow-y:scroll;
+	}
+
+	header h1 {
+		font-size: 3em;
+	}
+	article.entry {
+		width: 30%;
+		margin: 0 0 1em 2%;
+		min-height: 240px;
+		float: left;
+	}
 }

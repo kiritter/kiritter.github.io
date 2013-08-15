@@ -14,6 +14,7 @@ body {
 	width: 100%;
 	background-color:#ffffff;
 	color: #000000;
+	margin: 1em 0 0 0;
 }
 body:before {
 	content: "";
@@ -30,7 +31,7 @@ header {
 	text-align: center;
 }
 header h1 {
-	margin: 0.1em 0 0 0;
+	margin: 0.1em 0 0.2em 0;
 	padding: 0;
 	font-family: 'Pompiere', serif;
 	font-size: 1.5em;
@@ -137,6 +138,7 @@ footer table .col2 {
 	font-size: 0.85em;
 }
 
+
 @media only screen and (min-width: 350px) {
 	header h1 {
 		font-size: 2em;
@@ -153,13 +155,12 @@ footer table .col2 {
 }
 
 @media only screen and (min-width: 769px) {
-	div#all{
+	div#all {
 		max-width:1024px;
-		margin-left:auto;
-		margin-right:auto;
-		margin-top:0px;
+		margin: 0 auto 0 auto;
+		padding: 0;
 	}
-	html{
+	html {
 		overflow-y:scroll;
 	}
 

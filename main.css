@@ -168,8 +168,9 @@ footer table .col2 {
 	}
 	article.entry {
 		width: 30%;
-		margin: 0 0 1em 2%;
+		margin: 0 0 1em 1.7%;
 		min-height: 240px;
-		float: left;
+		display: inline-block;
+		vertical-align: top;
 	}
 }

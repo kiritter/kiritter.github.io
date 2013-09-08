@@ -113,9 +113,9 @@ article.entry p .note {
 article.entry a {
 	margin: 0 0 0 0.5em;
 	padding: 0;
+	display: inline-block;
 }
 article.entry img {
-	width: 95%;
 	max-width: 224px;
 	height: auto;
 	margin: 1em 0 0 0;

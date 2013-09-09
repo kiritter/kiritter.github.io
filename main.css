@@ -106,8 +106,8 @@ article.entry p {
 	font-family: 'Raleway', sans-serif;
 	font-size: 0.9em;
 }
-article.entry p .note {
-	font-size: 0.8em;
+article.entry p.note {
+	font-size: 0.78em;
 }
 
 article.entry a {

@@ -12,11 +12,16 @@ function init() {
 	}, false);
 }
 
+var CONST = {
+	JS: "JavaScript"
+	, P5: "Processing"
+};
+
 //--------------------------------------------------
 function getDataset() {
 	var dataset = [
 		{
-			categoryName: "JavaScript"
+			categoryName: CONST.JS
 			, categoryClass: "tag tagJS"
 			, targetName: "jsID3"
 			, targetHref: "http://kiritter.github.io/jsID3/"
@@ -26,7 +31,7 @@ function getDataset() {
 			, imgAlt: ""
 		}
 		, {
-			categoryName: "JavaScript"
+			categoryName: CONST.JS
 			, categoryClass: "tag tagJS"
 			, targetName: "jsMaze"
 			, targetHref: "http://kiritter.github.io/jsMaze/"
@@ -36,7 +41,7 @@ function getDataset() {
 			, imgAlt: ""
 		}
 		, {
-			categoryName: "JavaScript"
+			categoryName: CONST.JS
 			, categoryClass: "tag tagJS"
 			, targetName: ""
 			, targetHref: ""
@@ -46,7 +51,7 @@ function getDataset() {
 			, imgAlt: ""
 		}
 		, {
-			categoryName: "Processing"
+			categoryName: CONST.P5
 			, categoryClass: "tag tagP5"
 			, targetName: "prcBalls"
 			, targetHref: "http://kiritter.github.io/prcBalls/"
@@ -56,7 +61,7 @@ function getDataset() {
 			, imgAlt: ""
 		}
 		, {
-			categoryName: "Processing"
+			categoryName: CONST.P5
 			, categoryClass: "tag tagP5"
 			, targetName: "prcFirefly"
 			, targetHref: "http://kiritter.github.io/prcFirefly/"
@@ -66,7 +71,7 @@ function getDataset() {
 			, imgAlt: "薄暮の小川にゆらめくホタルの光"
 		}
 		, {
-			categoryName: "Processing"
+			categoryName: CONST.P5
 			, categoryClass: "tag tagP5"
 			, targetName: "prcScroll"
 			, targetHref: "http://kiritter.github.io/prcScroll/"
@@ -76,7 +81,7 @@ function getDataset() {
 			, imgAlt: ""
 		}
 		, {
-			categoryName: "Processing"
+			categoryName: CONST.P5
 			, categoryClass: "tag tagP5"
 			, targetName: "prcEmit"
 			, targetHref: "http://kiritter.github.io/prcEmit/"
@@ -86,7 +91,7 @@ function getDataset() {
 			, imgAlt: ""
 		}
 		, {
-			categoryName: "Processing"
+			categoryName: CONST.P5
 			, categoryClass: "tag tagP5"
 			, targetName: "prcSeto"
 			, targetHref: "http://kiritter.github.io/prcSeto/"
@@ -96,7 +101,7 @@ function getDataset() {
 			, imgAlt: "夏の夕暮れの瀬戸内海を進む貨物船"
 		}
 		, {
-			categoryName: "JavaScript"
+			categoryName: CONST.JS
 			, categoryClass: "tag tagJS"
 			, targetName: "jsChart01"
 			, targetHref: "http://kiritter.github.io/jsChart01/"
@@ -106,7 +111,7 @@ function getDataset() {
 			, imgAlt: ""
 		}
 		, {
-			categoryName: "JavaScript"
+			categoryName: CONST.JS
 			, categoryClass: "tag tagJS"
 			, targetName: "jsChart02"
 			, targetHref: "http://kiritter.github.io/jsChart02/"
@@ -116,7 +121,7 @@ function getDataset() {
 			, imgAlt: ""
 		}
 		, {
-			categoryName: "JavaScript"
+			categoryName: CONST.JS
 			, categoryClass: "tag tagJS"
 			, targetName: "jsChart03"
 			, targetHref: "http://kiritter.github.io/jsChart03/"
@@ -126,7 +131,7 @@ function getDataset() {
 			, imgAlt: ""
 		}
 		, {
-			categoryName: "JavaScript"
+			categoryName: CONST.JS
 			, categoryClass: "tag tagJS"
 			, targetName: "jsChart04"
 			, targetHref: "http://kiritter.github.io/jsChart04/"
@@ -155,6 +160,13 @@ function drawArticles(dataset) {
 			.attr("class", d.categoryClass)
 			.text(d.categoryName);
 		h2.append("a")
+			.attr("class", function(d) {
+				if (d.categoryName === CONST.JS) {
+					return "JS";
+				}else if (d.categoryName === CONST.P5) {
+					return "P5";
+				}
+			})
 			.attr("target", "_blank")
 			.attr("href", d.targetHref)
 			.text(d.targetName);

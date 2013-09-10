@@ -71,8 +71,7 @@ article.entry {
 	min-height: 150px;
 	margin: 0 auto 1.2em auto;
 	padding: 0.3em 0 0.5em 0.3em;
-	border: 1px solid gray;
-	border-color: #000000;
+	border: 1px solid #b3b3b3;
 	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
 }
 article.entry h2 {

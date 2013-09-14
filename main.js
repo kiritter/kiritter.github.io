@@ -19,6 +19,7 @@ var CONST = {
 
 //--------------------------------------------------
 function getDataset() {
+	//ここにオブジェクト追加すれば、動的に画面上にentryが増える
 	var dataset = [
 		{
 			categoryName: CONST.JS
@@ -43,11 +44,11 @@ function getDataset() {
 		, {
 			categoryName: CONST.JS
 			, categoryClass: "tag tagJS"
-			, targetName: ""
-			, targetHref: ""
-			, body: "(Coming soon... JavaScript Library)"
-			, note: ""
-			, imgSrc: ""
+			, targetName: "KiRhythmbox v0.8"
+			, targetHref: "http://kiritter.github.io/KiRhythmbox_v0.8/"
+			, body: "リズム譜を書くことで、音楽とざっくり同期を取って何かするためのJavaScriptライブラリ"
+			, note: "一旦、Exampleのカタチで載せて一区切り"
+			, imgSrc: "img/KiRhythmbox_v0.8.png"
 			, imgAlt: ""
 		}
 		, {
@@ -153,8 +154,13 @@ function drawArticles(dataset) {
 		.append("article")
 		.attr("class", "entry");
 
+	//eachはD3.jsのセレクション走査メソッド
 	entries.each(function(d, i) {
+		//thisは、entryのDOM
+		//selectすることで、D3のセレクションに変換
 		var entry = d3.select(this);
+		//D3のappendは、jQueryのappendToと同じ。新しく追加した要素が戻り値となる。
+		//なので、兄弟要素を追加するときは以下のように一旦h2変数に置いてからそれぞれappendする
 		var h2 = entry.append("h2");
 		h2.append("span")
 			.attr("class", d.categoryClass)
@@ -175,6 +181,7 @@ function drawArticles(dataset) {
 		entry.append("p")
 			.attr("class", "note")
 			.text(d.note);
+		//新しく追加した要素が戻るので、親->子->孫と追加していくときは続けて書ける
 		entry.append("a")
 			.attr("target", "_blank")
 			.attr("href", d.targetHref)

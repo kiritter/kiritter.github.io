@@ -60,7 +60,7 @@ section {
 }
 section h1 {
 	margin: 0.5em 2% 1em 2%;
-	padding: 0.3em 0 0 0.5em;
+	padding: 0.3em 0 0 0;
 	font-family: 'Cabin', sans-serif;
 	font-size: 1em;
 	border-top: solid 1px #ff7f0e;
@@ -72,7 +72,7 @@ article.entry {
 	max-width: 500px;
 	min-height: 150px;
 	margin: 0 auto 1.2em auto;
-	padding: 0.5em 0.5em 0.5em 0.5em;
+	padding: 0.5em 0.7% 0.5em 0.7%;
 	border: 1px solid #b3b3b3;
 	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
 }

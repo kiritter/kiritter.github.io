@@ -72,7 +72,7 @@ article.entry {
 	max-width: 500px;
 	min-height: 150px;
 	margin: 0 auto 1.2em auto;
-	padding: 0.3em 0 0.5em 0.3em;
+	padding: 0.5em 0.5em 0.5em 0.5em;
 	border: 1px solid #b3b3b3;
 	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
 }
@@ -113,13 +113,15 @@ article.entry p {
 	padding: 0;
 	font-family: 'Raleway', sans-serif;
 	font-size: 0.9em;
+	line-height: 1.2;
 }
 article.entry p.note {
 	font-size: 0.78em;
+	margin-left: 1.3em;
 }
 
 article.entry a {
-	margin: 0 0 0 0.5em;
+	margin: 0 0 0 1em;
 	padding: 0;
 	display: inline-block;
 }
@@ -186,21 +188,21 @@ footer div.tweet {
 	}
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 860px) {
 	div#all {
-		max-width:1024px;
+		max-width: 1024px;
 		margin: 0 auto 0 auto;
 		padding: 0;
 	}
 	html {
-		overflow-y:scroll;
+		overflow-y: scroll;
 	}
 
 	header h1 {
 		font-size: 3em;
 	}
 	article.entry {
-		width: 30%;
+		width: 29%;
 		margin: 0 0 1.2em 2%;
 		min-height: 240px;
 		display: inline-block;

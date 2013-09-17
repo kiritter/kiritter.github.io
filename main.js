@@ -169,6 +169,9 @@ function drawArticles(dataset) {
 			})
 			.attr("target", "_blank")
 			.attr("href", d.targetHref)
+			.on("click", function(d) {
+				ga('send', 'event', 'article', 'click', d.targetName + "_str");
+			})
 			.text(d.targetName);
 		entry.append("p")
 			.text(d.body);
@@ -178,6 +181,9 @@ function drawArticles(dataset) {
 		entry.append("a")
 			.attr("target", "_blank")
 			.attr("href", d.targetHref)
+			.on("click", function(d) {
+				ga('send', 'event', 'article', 'click', d.targetName + "_img");
+			})
 			.append("img")
 			.attr("src", d.imgSrc)
 			.attr("alt", d.imgAlt);

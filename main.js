@@ -23,101 +23,23 @@ function getDataset() {
 		{
 			categoryName: CONST.JS
 			, categoryClass: "tag tagJS"
-			, targetName: "jsID3"
-			, targetHref: "jsID3/"
-			, body: "I tried reading ID3 tags in MP3 files."
-			, note: "Keywords : バイナリデータ, 文字コード変換, Base64変換"
-			, imgSrc: "img/ID3.png"
-			, imgAlt: ""
-		}
-		, {
-			categoryName: CONST.JS
-			, categoryClass: "tag tagJS"
-			, targetName: "jsMaze"
-			, targetHref: "jsMaze/"
-			, body: "Octocat goes through a maze! (JavaScript MVC SVG Example)"
-			, note: "Keywords : グラフデータ構造, MVC, SVG"
-			, imgSrc: "img/Maze.png"
-			, imgAlt: ""
-		}
-		, {
-			categoryName: CONST.JS
-			, categoryClass: "tag tagJS"
 			, targetName: "KiRhythmbox v0.8"
 			, targetHref: "KiRhythmbox_v0.8/"
+			, date: "2013/9"
 			, body: "リズム譜を書くことで、音楽とざっくり同期を取って何かするためのJavaScriptライブラリ"
 			, note: "一旦、Exampleのカタチで載せて一区切り"
 			, imgSrc: "img/KiRhythmbox_v0.8.png"
 			, imgAlt: ""
 		}
 		, {
-			categoryName: CONST.P5
-			, categoryClass: "tag tagP5"
-			, targetName: "prcBalls"
-			, targetHref: "prcBalls/"
-			, body: "An example of Processing code."
-			, note: "Keywords : Math & Physics"
-			, imgSrc: "img/Balls.png"
-			, imgAlt: ""
-		}
-		, {
-			categoryName: CONST.P5
-			, categoryClass: "tag tagP5"
-			, targetName: "prcFirefly"
-			, targetHref: "prcFirefly/"
-			, body: "Fireflies above a Stream."
-			, note: "Keywords : Particle, Glow, Pixels"
-			, imgSrc: "img/Firefly.png"
-			, imgAlt: "薄暮の小川にゆらめくホタルの光"
-		}
-		, {
-			categoryName: CONST.P5
-			, categoryClass: "tag tagP5"
-			, targetName: "prcScroll"
-			, targetHref: "prcScroll/"
-			, body: "Infinite Scroll to the Right"
-			, note: "Keywords : Scroll on Canvas, Parallax, Noise"
-			, imgSrc: "img/Scroll.png"
-			, imgAlt: ""
-		}
-		, {
-			categoryName: CONST.P5
-			, categoryClass: "tag tagP5"
-			, targetName: "prcEmit"
-			, targetHref: "prcEmit/"
-			, body: "A Black Ball emits Particles"
-			, note: "Keywords : Particle, Glow, Pixels, and sinθ&cosθ"
-			, imgSrc: "img/Emit.png"
-			, imgAlt: ""
-		}
-		, {
-			categoryName: CONST.P5
-			, categoryClass: "tag tagP5"
-			, targetName: "prcSeto"
-			, targetHref: "prcSeto/"
-			, body: "The Seto Inland Sea in the Summer Evening"
-			, note: "Keywords : tint"
-			, imgSrc: "img/Seto.png"
-			, imgAlt: "夏の夕暮れの瀬戸内海を進む貨物船"
-		}
-		, {
 			categoryName: CONST.JS
 			, categoryClass: "tag tagJS"
-			, targetName: "jsChart01"
-			, targetHref: "jsChart01/"
-			, body: "A Single Series Line Chart - D3.js"
-			, note: "Keywords : SVG, Chart, 折れ線グラフ(Single)"
-			, imgSrc: "img/Chart01.png"
-			, imgAlt: ""
-		}
-		, {
-			categoryName: CONST.JS
-			, categoryClass: "tag tagJS"
-			, targetName: "jsChart02"
-			, targetHref: "jsChart02/"
-			, body: "A Multi Series Line Chart - D3.js"
-			, note: "Keywords : SVG, Chart, 折れ線グラフ(Multi)"
-			, imgSrc: "img/Chart02.png"
+			, targetName: "jsChart04"
+			, targetHref: "jsChart04/"
+			, date: "2013/9"
+			, body: "A Line Chart with Brush - D3.js"
+			, note: "Keywords : SVG, Chart, 折れ線グラフ(範囲選択)"
+			, imgSrc: "img/Chart04.png"
 			, imgAlt: ""
 		}
 		, {
@@ -125,6 +47,7 @@ function getDataset() {
 			, categoryClass: "tag tagJS"
 			, targetName: "jsChart03"
 			, targetHref: "jsChart03/"
+			, date: "2013/9"
 			, body: "A Line Chart with Zoom & Pan - D3.js"
 			, note: "Keywords : SVG, Chart, 折れ線グラフ(Zoom & Pan)"
 			, imgSrc: "img/Chart03.png"
@@ -133,11 +56,100 @@ function getDataset() {
 		, {
 			categoryName: CONST.JS
 			, categoryClass: "tag tagJS"
-			, targetName: "jsChart04"
-			, targetHref: "jsChart04/"
-			, body: "A Line Chart with Brush - D3.js"
-			, note: "Keywords : SVG, Chart, 折れ線グラフ(範囲選択)"
-			, imgSrc: "img/Chart04.png"
+			, targetName: "jsChart02"
+			, targetHref: "jsChart02/"
+			, date: "2013/9"
+			, body: "A Multi Series Line Chart - D3.js"
+			, note: "Keywords : SVG, Chart, 折れ線グラフ(Multi)"
+			, imgSrc: "img/Chart02.png"
+			, imgAlt: ""
+		}
+		, {
+			categoryName: CONST.JS
+			, categoryClass: "tag tagJS"
+			, targetName: "jsChart01"
+			, targetHref: "jsChart01/"
+			, date: "2013/9"
+			, body: "A Single Series Line Chart - D3.js"
+			, note: "Keywords : SVG, Chart, 折れ線グラフ(Single)"
+			, imgSrc: "img/Chart01.png"
+			, imgAlt: ""
+		}
+		, {
+			categoryName: CONST.P5
+			, categoryClass: "tag tagP5"
+			, targetName: "prcSeto"
+			, targetHref: "prcSeto/"
+			, date: "2013/7"
+			, body: "The Seto Inland Sea in the Summer Evening"
+			, note: "Keywords : tint"
+			, imgSrc: "img/Seto.png"
+			, imgAlt: "夏の夕暮れの瀬戸内海を進む貨物船"
+		}
+		, {
+			categoryName: CONST.P5
+			, categoryClass: "tag tagP5"
+			, targetName: "prcEmit"
+			, targetHref: "prcEmit/"
+			, date: "2013/7"
+			, body: "A Black Ball emits Particles"
+			, note: "Keywords : Particle, Glow, Pixels, and sinθ&cosθ"
+			, imgSrc: "img/Emit.png"
+			, imgAlt: ""
+		}
+		, {
+			categoryName: CONST.P5
+			, categoryClass: "tag tagP5"
+			, targetName: "prcScroll"
+			, targetHref: "prcScroll/"
+			, date: "2013/6"
+			, body: "Infinite Scroll to the Right"
+			, note: "Keywords : Scroll on Canvas, Parallax, Noise"
+			, imgSrc: "img/Scroll.png"
+			, imgAlt: ""
+		}
+		, {
+			categoryName: CONST.P5
+			, categoryClass: "tag tagP5"
+			, targetName: "prcFirefly"
+			, targetHref: "prcFirefly/"
+			, date: "2013/6"
+			, body: "Fireflies above a Stream."
+			, note: "Keywords : Particle, Glow, Pixels"
+			, imgSrc: "img/Firefly.png"
+			, imgAlt: "薄暮の小川にゆらめくホタルの光"
+		}
+		, {
+			categoryName: CONST.P5
+			, categoryClass: "tag tagP5"
+			, targetName: "prcBalls"
+			, targetHref: "prcBalls/"
+			, date: "2013/6"
+			, body: "An example of Processing code."
+			, note: "Keywords : Math & Physics"
+			, imgSrc: "img/Balls.png"
+			, imgAlt: ""
+		}
+		, {
+			categoryName: CONST.JS
+			, categoryClass: "tag tagJS"
+			, targetName: "jsMaze"
+			, targetHref: "jsMaze/"
+			, date: "2013/5"
+			, body: "Octocat goes through a maze! (JavaScript MVC SVG Example)"
+			, note: "Keywords : グラフデータ構造, MVC, SVG"
+			, imgSrc: "img/Maze.png"
+			, imgAlt: ""
+		}
+		, {
+			categoryName: CONST.JS
+			, categoryClass: "tag tagJS"
+			, targetName: "jsID3"
+			, targetHref: "jsID3/"
+			, date: "2013/4"
+			, body: "I tried reading ID3 tags in MP3 files."
+			, note: "Keywords : バイナリデータ, 文字コード変換, Base64変換"
+			, imgSrc: "img/ID3.png"
 			, imgAlt: ""
 		}
 	];

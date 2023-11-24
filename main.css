@@ -115,6 +115,10 @@ article.entry p {
 	font-size: 0.9em;
 	line-height: 1.2;
 }
+article.entry p.date {
+	font-size: 0.78em;
+	margin-left: 1.3em;
+}
 article.entry p.note {
 	font-size: 0.78em;
 	margin-left: 1.3em;

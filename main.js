@@ -186,6 +186,9 @@ function drawArticles(dataset) {
 			})
 			.text(d.targetName);
 		entry.append("p")
+			.attr("class", "date")
+			.text(d.date);
+		entry.append("p")
 			.text(d.body);
 		entry.append("p")
 			.attr("class", "note")

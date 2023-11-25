@@ -191,7 +191,7 @@ function getDataset() {
 			, targetName: "jsMaze"
 			, targetHref: "jsMaze/"
 			, date: "2013/5"
-			, body: "Octocat goes through a maze! (JavaScript MVC SVG Example)"
+			, body: "A bat goes through a maze! (JavaScript MVC SVG Example)"
 			, note: "Keywords : グラフデータ構造, MVC, SVG"
 			, imgSrc: "img/Maze.png"
 			, imgAlt: ""
@@ -248,7 +248,9 @@ function drawArticles(dataset) {
 		entry.append("p")
 			.attr("class", "note")
 			.text(d.note);
-		entry.append("a")
+
+		if (d.imgSrc) {
+			entry.append("a")
 			.attr("target", "_blank")
 			.attr("href", d.targetHref)
 			.on("click", function(d) {
@@ -257,6 +259,7 @@ function drawArticles(dataset) {
 			.append("img")
 			.attr("src", d.imgSrc)
 			.attr("alt", d.imgAlt);
+		}
 	});
 }
 

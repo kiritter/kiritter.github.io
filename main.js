@@ -6,8 +6,10 @@ init();
 function init() {
 	window.addEventListener("load", function() {
 
-		var dataset = getDataset();
-		drawArticles(dataset);
+		var productDataset = getProductDataset();
+		drawArticles("#entries-product", productDataset);
+		var exampleDataset = getExampleDataset();
+		drawArticles("#entries-example", exampleDataset);
 
 	}, false);
 }
@@ -18,7 +20,14 @@ var CONST = {
 };
 
 //--------------------------------------------------
-function getDataset() {
+function getProductDataset() {
+	var dataset = [
+	];
+	return dataset;
+}
+
+//--------------------------------------------------
+function getExampleDataset() {
 	var dataset = [
 		{
 			categoryName: CONST.JS
@@ -212,8 +221,8 @@ function getDataset() {
 }
 
 //--------------------------------------------------
-function drawArticles(dataset) {
-	var entries = d3.select("#entries")
+function drawArticles(elEd, dataset) {
+	var entries = d3.select(elEd)
 		.selectAll("article.entry")
 		.data(dataset)
 		.enter()

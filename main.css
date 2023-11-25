@@ -70,7 +70,7 @@ article.entry {
 	width: 90%;
 	min-width: 150px;
 	max-width: 500px;
-	min-height: 150px;
+	min-height: 140px;
 	margin: 0 auto 1.2em auto;
 	padding: 0.5em 0.7% 0.5em 0.7%;
 	border: 1px solid #b3b3b3;
@@ -208,7 +208,7 @@ footer div.tweet {
 	article.entry {
 		width: 29%;
 		margin: 0 0 1.2em 2%;
-		min-height: 240px;
+		min-height: 140px;
 		display: inline-block;
 		vertical-align: top;
 	}

@@ -23,6 +23,61 @@ function getDataset() {
 		{
 			categoryName: CONST.JS
 			, categoryClass: "tag tagJS"
+			, targetName: "event"
+			, targetHref: "event/"
+			, date: "2018/6"
+			, body: ""
+			, note: "Keywords : Pub/Sub"
+			, imgSrc: ""
+			, imgAlt: ""
+		},
+		{
+			categoryName: CONST.JS
+			, categoryClass: "tag tagJS"
+			, targetName: "tree"
+			, targetHref: "tree/"
+			, date: "2017/8"
+			, body: ""
+			, note: "Keywords : デザパタ"
+			, imgSrc: ""
+			, imgAlt: ""
+		},
+		{
+			categoryName: CONST.JS
+			, categoryClass: "tag tagJS"
+			, targetName: "undo"
+			, targetHref: "undo/"
+			, date: "2017/7"
+			, body: ""
+			, note: "Keywords : デザパタ"
+			, imgSrc: ""
+			, imgAlt: ""
+		},
+		{
+			categoryName: CONST.JS
+			, categoryClass: "tag tagJS"
+			, targetName: "musicalchairs"
+			, targetHref: "musicalchairs/"
+			, date: "2017/5"
+			, body: ""
+			, note: "Keywords : オブジェクト指向"
+			, imgSrc: ""
+			, imgAlt: ""
+		},
+		{
+			categoryName: CONST.JS
+			, categoryClass: "tag tagJS"
+			, targetName: "firefly2"
+			, targetHref: "firefly2/"
+			, date: "2015/5"
+			, body: "Fireflyに再挑戦"
+			, note: "Keywords : オブジェクト指向"
+			, imgSrc: ""
+			, imgAlt: ""
+		},
+		{
+			categoryName: CONST.JS
+			, categoryClass: "tag tagJS"
 			, targetName: "KiRhythmbox v0.8"
 			, targetHref: "KiRhythmbox_v0.8/"
 			, date: "2013/9"
@@ -30,8 +85,8 @@ function getDataset() {
 			, note: "一旦、Exampleのカタチで載せて一区切り"
 			, imgSrc: "img/KiRhythmbox_v0.8.png"
 			, imgAlt: ""
-		}
-		, {
+		},
+		{
 			categoryName: CONST.JS
 			, categoryClass: "tag tagJS"
 			, targetName: "jsChart04"
@@ -41,8 +96,8 @@ function getDataset() {
 			, note: "Keywords : SVG, Chart, 折れ線グラフ(範囲選択)"
 			, imgSrc: "img/Chart04.png"
 			, imgAlt: ""
-		}
-		, {
+		},
+		{
 			categoryName: CONST.JS
 			, categoryClass: "tag tagJS"
 			, targetName: "jsChart03"
@@ -52,8 +107,8 @@ function getDataset() {
 			, note: "Keywords : SVG, Chart, 折れ線グラフ(Zoom & Pan)"
 			, imgSrc: "img/Chart03.png"
 			, imgAlt: ""
-		}
-		, {
+		},
+		{
 			categoryName: CONST.JS
 			, categoryClass: "tag tagJS"
 			, targetName: "jsChart02"
@@ -63,8 +118,8 @@ function getDataset() {
 			, note: "Keywords : SVG, Chart, 折れ線グラフ(Multi)"
 			, imgSrc: "img/Chart02.png"
 			, imgAlt: ""
-		}
-		, {
+		},
+		{
 			categoryName: CONST.JS
 			, categoryClass: "tag tagJS"
 			, targetName: "jsChart01"
@@ -74,8 +129,8 @@ function getDataset() {
 			, note: "Keywords : SVG, Chart, 折れ線グラフ(Single)"
 			, imgSrc: "img/Chart01.png"
 			, imgAlt: ""
-		}
-		, {
+		},
+		{
 			categoryName: CONST.P5
 			, categoryClass: "tag tagP5"
 			, targetName: "prcSeto"
@@ -85,8 +140,8 @@ function getDataset() {
 			, note: "Keywords : tint"
 			, imgSrc: "img/Seto.png"
 			, imgAlt: "夏の夕暮れの瀬戸内海を進む貨物船"
-		}
-		, {
+		},
+		{
 			categoryName: CONST.P5
 			, categoryClass: "tag tagP5"
 			, targetName: "prcEmit"
@@ -96,8 +151,8 @@ function getDataset() {
 			, note: "Keywords : Particle, Glow, Pixels, and sinθ&cosθ"
 			, imgSrc: "img/Emit.png"
 			, imgAlt: ""
-		}
-		, {
+		},
+		{
 			categoryName: CONST.P5
 			, categoryClass: "tag tagP5"
 			, targetName: "prcScroll"
@@ -107,8 +162,8 @@ function getDataset() {
 			, note: "Keywords : Scroll on Canvas, Parallax, Noise"
 			, imgSrc: "img/Scroll.png"
 			, imgAlt: ""
-		}
-		, {
+		},
+		{
 			categoryName: CONST.P5
 			, categoryClass: "tag tagP5"
 			, targetName: "prcFirefly"
@@ -118,8 +173,8 @@ function getDataset() {
 			, note: "Keywords : Particle, Glow, Pixels"
 			, imgSrc: "img/Firefly.png"
 			, imgAlt: "薄暮の小川にゆらめくホタルの光"
-		}
-		, {
+		},
+		{
 			categoryName: CONST.P5
 			, categoryClass: "tag tagP5"
 			, targetName: "prcBalls"
@@ -129,8 +184,8 @@ function getDataset() {
 			, note: "Keywords : Math & Physics"
 			, imgSrc: "img/Balls.png"
 			, imgAlt: ""
-		}
-		, {
+		},
+		{
 			categoryName: CONST.JS
 			, categoryClass: "tag tagJS"
 			, targetName: "jsMaze"
@@ -140,8 +195,8 @@ function getDataset() {
 			, note: "Keywords : グラフデータ構造, MVC, SVG"
 			, imgSrc: "img/Maze.png"
 			, imgAlt: ""
-		}
-		, {
+		},
+		{
 			categoryName: CONST.JS
 			, categoryClass: "tag tagJS"
 			, targetName: "jsID3"

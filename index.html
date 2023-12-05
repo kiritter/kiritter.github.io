@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
 <meta charset="utf-8">
 <meta name="google-site-verification" content="RXR9rDeMqsSHpxJ3zqmSSL0l-OOVvloJMFgFpfiPV2w" />
@@ -20,7 +20,7 @@
 <script>
   var host = window.location.hostname;
   if (host === '127.0.0.1' || host === 'localhost') {
-    //Dev
+    gtag = console.debug;
   }else{
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -39,7 +39,7 @@
 
 	<div id="contens">
 		<section>
-			<h1>Products</h1>
+			<h1>Product Sites</h1>
 			<div id="entries-product"></div>
 		</section>
 		<section>

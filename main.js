@@ -22,6 +22,17 @@ var CONST = {
 //--------------------------------------------------
 function getProductDataset() {
 	var dataset = [
+		{
+			categoryName: CONST.JS
+			, categoryClass: "tag tagJS"
+			, targetName: "時期と距離の比較地図"
+			, targetHref: "hikakumap/"
+			, date: "2023/12"
+			, body: ""
+			, note: "Keywords : Map, Leaflet"
+			, imgSrc: "img/hikakumap_icon-72x72.png"
+			, imgAlt: ""
+		},
 	];
 	return dataset;
 }

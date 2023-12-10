@@ -30,7 +30,7 @@ function getProductDataset() {
 			, date: "2023/12"
 			, body: ""
 			, note: "Keywords : Map, Leaflet"
-			, imgSrc: "img/hikakumap_icon-72x72.png"
+			, imgSrc: "img/hikakumap_icon-96x96.png"
 			, imgAlt: ""
 		},
 	];

@@ -25,6 +25,17 @@ function getProductDataset() {
 		{
 			categoryName: CONST.JS
 			, categoryClass: "tag tagJS"
+			, targetName: "街道浮世絵マップ"
+			, targetHref: "kaidoukiyoemap/"
+			, date: "2023/12"
+			, body: ""
+			, note: "Keywords : Map, Leaflet"
+			, imgSrc: "img/kaidoukiyoemap_icon-96x96.png"
+			, imgAlt: ""
+		},
+		{
+			categoryName: CONST.JS
+			, categoryClass: "tag tagJS"
 			, targetName: "時期と距離の比較地図"
 			, targetHref: "hikakumap/"
 			, date: "2023/12"

@@ -25,11 +25,22 @@ function getProductDataset() {
 		{
 			categoryName: CONST.JS
 			, categoryClass: "tag tagJS"
+			, targetName: "おくのほそ道マップ"
+			, targetHref: "hosomap/"
+			, date: "2024/1"
+			, body: "芭蕉の行きて帰りし物語マップ"
+			, note: "Keywords : Map, Leaflet, 歴史, 文芸"
+			, imgSrc: "img/hosomap_icon-96x96.png"
+			, imgAlt: ""
+		},
+		{
+			categoryName: CONST.JS
+			, categoryClass: "tag tagJS"
 			, targetName: "街道浮世絵マップ"
 			, targetHref: "kaidoukiyoemap/"
 			, date: "2023/12"
 			, body: "『東海道五十三次』『木曽海道六十九次』(木曽街道/中山道)"
-			, note: "Keywords : Map, Leaflet"
+			, note: "Keywords : Map, Leaflet, 歴史, 絵画"
 			, imgSrc: "img/kaidoukiyoemap_icon-96x96.png"
 			, imgAlt: "画面キャプチャ"
 			, imgTitle: ""

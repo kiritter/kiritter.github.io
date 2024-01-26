@@ -25,10 +25,21 @@ function getProductDataset() {
 		{
 			categoryName: CONST.JS
 			, categoryClass: "tag tagJS"
-			, targetName: "おくのほそ道マップ"
+			, targetName: "陰影起伏図で見る古墳マップ"
+			, targetHref: "kofunmap/"
+			, date: "2024/1"
+			, body: "陰影起伏図, 海面上昇イメージ"
+			, note: "Keywords : Map, Leaflet, 歴史, 地形"
+			, imgSrc: "img/kofunmap_icon-96x96.png"
+			, imgAlt: ""
+		},
+		{
+			categoryName: CONST.JS
+			, categoryClass: "tag tagJS"
+			, targetName: "おくのほそ道：芭蕉の行きて帰りし物語マップ"
 			, targetHref: "hosomap/"
 			, date: "2024/1"
-			, body: "芭蕉の行きて帰りし物語マップ"
+			, body: ""
 			, note: "Keywords : Map, Leaflet, 歴史, 文芸"
 			, imgSrc: "img/hosomap_icon-96x96.png"
 			, imgAlt: ""
@@ -51,8 +62,8 @@ function getProductDataset() {
 			, targetName: "時期と距離の比較地図"
 			, targetHref: "hikakumap/"
 			, date: "2023/12"
-			, body: "地理院地図の年代別空中写真(航空写真), 日本版 Map Warper の「五万分一地形圖」(旧版地図), 距離の同心円表示"
-			, note: "Keywords : Map, Leaflet"
+			, body: "年代別航空写真, 旧版地図, 海面上昇イメージ, 距離の同心円表示"
+			, note: "Keywords : Map, Leaflet, IndexedDB, 地理院地図, 日本版 Map Warper"
 			, imgSrc: "img/hikakumap_icon-96x96.png"
 			, imgAlt: "画面キャプチャ"
 			, imgTitle: ""
@@ -284,10 +295,12 @@ function drawArticles(elEd, dataset) {
 	entries.each(function(d, i) {
 		var entry = d3.select(this);
 		var h2 = entry.append("h2");
-		h2.append("span")
+		h2.append("div")
+			.append("span")
 			.attr("class", d.categoryClass)
 			.text(d.categoryName);
-		h2.append("a")
+		h2.append("div")
+			.append("a")
 			.attr("class", function(d) {
 				if (d.categoryName === CONST.JS) {
 					return "JS";

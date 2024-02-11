@@ -25,6 +25,17 @@ function getProductDataset() {
 		{
 			categoryName: CONST.JS
 			, categoryClass: "tag tagJS"
+			, targetName: "歴史年表地図：地図で表現するタイムライン"
+			, targetHref: "timelinemap/"
+			, date: "2024/2"
+			, body: "Web地図の仕組みを使った年表（有史, 縄文時代, 後期旧石器時代, 地球誕生）"
+			, note: "Keywords : Map, Leaflet, 歴史"
+			, imgSrc: "img/timelinemap_icon-96x96.png"
+			, imgAlt: ""
+		},
+		{
+			categoryName: CONST.JS
+			, categoryClass: "tag tagJS"
 			, targetName: "陰影起伏図で見る古墳マップ"
 			, targetHref: "kofunmap/"
 			, date: "2024/1"
@@ -39,7 +50,7 @@ function getProductDataset() {
 			, targetName: "おくのほそ道：芭蕉の行きて帰りし物語マップ"
 			, targetHref: "hosomap/"
 			, date: "2024/1"
-			, body: ""
+			, body: "死と再生の物語"
 			, note: "Keywords : Map, Leaflet, 歴史, 文芸"
 			, imgSrc: "img/hosomap_icon-96x96.png"
 			, imgAlt: ""
